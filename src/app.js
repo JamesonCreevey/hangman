@@ -64,10 +64,10 @@ function updateWrongLettersEl() {
   });
 
   //check if lost
-  if(wrongLetters.length === figureParts.length) {
-    finalMessage.innerText = 'you lost noob';
-    popup.style.display = 'flex';
-  } 
+  if (wrongLetters.length === figureParts.length) {
+    finalMessage.innerText = "you lost noob";
+    popup.style.display = "flex";
+  }
 }
 
 // show notifications
@@ -105,7 +105,7 @@ window.addEventListener("keydown", (e) => {
 });
 
 // restart game
-playAgainBtn.addEventListener('click', () => {
+playAgainBtn.addEventListener("click", () => {
   // empty arrays
   correctLetters.splice(0);
   wrongLetters.splice(0);
@@ -116,7 +116,7 @@ playAgainBtn.addEventListener('click', () => {
 
   updateWrongLettersEl();
 
-  popup.style.display = 'none';
+  popup.style.display = "none";
 });
 
 displayWord();
